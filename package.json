@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "moment": "^2.29.1",
     "xacml": "^0.0.1",
     "xml2js": "^0.4.23"
   }

@@ -1,4 +1,5 @@
 const converter = require('./xml2js')
+const moment = require('moment');
 const fs = require('fs');
 
 
@@ -25,6 +26,15 @@ class PDP {
         return request.patientID == id && request.resourceType == "personalInfo";
     }
     //rule3()
+    checkRule3() {
+        let format = 'hh:mm:ss'
+
+        let timeOfDay = moment(request.time, format);
+        let beforeTime = moment('04:00:00', format);
+        let afterTime = moment('02:00:00', format);
+
+        return (timeOfDay.isBetween(beforeTime, afterTime)) && request.identity != "Tech";
+    }
     //rule4()
     checkRule4() {
         return request.deviceType == "desktop" && request.ipAddress.startsWith("192.168");
