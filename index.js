@@ -21,6 +21,9 @@ class PDP {
     }
     //rule1()
     //rule2()
+    checkRule2(id) {
+        return request.patientID == id
+    }
     //rule3()
     //rule4()
     checkRule4() {
