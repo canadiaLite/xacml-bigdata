@@ -30,10 +30,10 @@ class PDP {
         let format = 'hh:mm:ss'
 
         let timeOfDay = moment(request.time, format);
-        let beforeTime = moment('04:00:00', format);
-        let afterTime = moment('02:00:00', format);
+        let beforeTime = moment('02:00:00', format);
+        let afterTime = moment('04:00:00', format);
 
-        return (timeOfDay.isBetween(beforeTime, afterTime)) && request.identity != "Tech";
+        return (timeOfDay.isBetween(beforeTime, afterTime)) && request.identity == "Tech";
     }
     //rule4()
     checkRule4() {
