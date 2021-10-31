@@ -21,6 +21,9 @@ class PDP {
         return PIP.getUserInfo(id)
     }
     //rule1()
+    checkRule1() {
+      return request.userType == "patient" && (request.resourceType == "imaging" || request.resourceType == "notes");
+    }
     //rule2()
     checkRule2(id) {
         return request.patientID == id && request.resourceType == "personalInfo";
