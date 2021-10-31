@@ -1,3 +1,7 @@
+const converter = require('./xml2js')
+const fs = require('fs');
+
+
 class PEP {
     readRequests() {
         //read each request from XML file, turn into JSON object, send json object to PDP
@@ -6,6 +10,9 @@ class PEP {
 }
 
 class PDP {
+    constructor(request = {}) {
+        //process requestXml here
+    }
     //for loop through all rules
         //pass in request + userinfo check for each rule
         //if all return true, return true, else return false
@@ -16,10 +23,14 @@ class PDP {
     //rule2()
     //rule3()
     //rule4()
+    checkRule4() {
+        return request.deviceType == "desktop" && request.ipAddress.startsWith("192.168");
+    }
 }
 
 class PAP {
-    policies = []
+    constructor(policies = []) {
+    }
     addPolicy(policy) {
         this.policies.push(policy)
     }
@@ -29,7 +40,8 @@ class PAP {
 }
 
 class PIP {
-    userDict = []
+    constructor(userDict = []) {
+    }
     readUsers() {
         //reading each user info from xml, loop through folder
     }
@@ -39,3 +51,8 @@ class PIP {
     //docuDict
     //readDocs()
 }
+
+//test accessing parsed xml js object
+const xml = fs.readFileSync('test.xml');
+const parsed = converter.parseXml(xml);
+console.log(parsed.breakfast_menu.food[0].name == "Belgian Waffles")
