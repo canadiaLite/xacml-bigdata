@@ -63,9 +63,11 @@ class PAP {
 }
 
 class PIP {
-    constructor(userDict = []) {
+    constructor(userDict = [], rscDict = []) {
         this.userDict = new Object();
         this.readUsers();
+        this.rscDict = new Object();
+        this.readResources();
     }
     readUsers() {
         const userDir = "users/";
@@ -83,12 +85,29 @@ class PIP {
     getUserInfo(id) {
         return this.userDict[id]
     }
-    //docuDict
-    //readDocs()
+    readResources(){
+        const rscDir = "resources/";
+        const files = fs.readdirSync(rscDir);
+        for (const file of files) {
+            var xmlt = fs.readFileSync(rscDir+file);
+            var parsedt = converter.parseXml(xmlt);
+            let rscAtt = new Object();
+            for (let i=0; i< parsedt.Resource.Attributes.length; i++){
+                rscAtt[parsedt.Resource.Attributes[i].Category[0].split(":")[7]] = (parsedt.Resource.Attributes[i].Attribute[0].AttributeValue[0]._);
+            }
+            this.rscDict[parsedt.Resource.id[0]] = rscAtt;
+        }
+    }
+    getResourceInfo(id){
+        return this.rscDict[id]
+    }
 }
 
 //test accessing parsed xml js object
 const xml = fs.readFileSync('test.xml');
 const parsed = converter.parseXml(xml);
 console.log(parsed.breakfast_menu.food[0].name == "Belgian Waffles")
+
+var test = new PIP();
+console.log(test.getResourceInfo(1))
 

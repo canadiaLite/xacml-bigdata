@@ -1,0 +1,22 @@
+<Resource xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" id="1">
+    <Attributes Category="urn:oasis:names:tc:xacml:1.0:subject-category:type">
+        <Attribute AttributeId="urn:oasis:names:tc:xacml:1.0:subject:type-id">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Imaging</AttributeValue>
+        </Attribute>
+    </Attributes>
+    <Attributes Category="urn:oasis:names:tc:xacml:1.0:subject-category:status">
+        <Attribute AttributeId="urn:oasis:names:tc:xacml:1.0:action:status-id">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Closed</AttributeValue>
+        </Attribute>
+    </Attributes>
+    <Attributes Category="urn:oasis:names:tc:xacml:1.0:subject-category:patientId">
+        <Attribute AttributeId="urn:oasis:names:tc:xacml:1.0:subject:patientId-id">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">1</AttributeValue>
+        </Attribute>
+    </Attributes>
+    <Attributes Category="urn:oasis:names:tc:xacml:1.0:subject-category:staffId">
+        <Attribute AttributeId="urn:oasis:names:tc:xacml:1.0:action:staffId-id">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">4</AttributeValue>
+        </Attribute>
+    </Attributes>
+</Resource>
