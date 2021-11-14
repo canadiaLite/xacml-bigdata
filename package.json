@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "moment": "^2.29.1",
+    "package.json": "^2.0.1",
     "xacml": "^0.0.1",
     "xml2js": "^0.4.23"
   }

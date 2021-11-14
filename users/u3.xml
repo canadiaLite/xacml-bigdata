@@ -1,0 +1,12 @@
+<User xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" id="3">
+    <Attributes Category="urn:oasis:names:tc:xacml:1.0:subject-category:role">
+        <Attribute AttributeId="urn:oasis:names:tc:xacml:1.0:subject:role-id">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Patient</AttributeValue>
+        </Attribute>
+    </Attributes>
+    <Attributes Category="urn:oasis:names:tc:xacml:1.0:subject-category:identity">
+        <Attribute AttributeId="urn:oasis:names:tc:xacml:1.0:action:identity-id">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Patient</AttributeValue>
+        </Attribute>
+    </Attributes>
+</User>
