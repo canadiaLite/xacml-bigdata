@@ -1,0 +1,39 @@
+
+<!-- Physician tries to view a Notes resource -->
+<Request xmlns="urn:oasis:names:tc:xacml:2.0:context:schema:os" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
+  <Subject>  
+     <Attribute AttributeId="identity" DataType="http://www.w3.org/2001/XMLSchema#string">  
+       <AttributeValue>physician</AttributeValue>  
+     </Attribute>  
+
+     <Attribute AttributeId="role" DataType="http://www.w3.org/2001/XMLSchema#string">  
+       <AttributeValue>staff</AttributeValue>  
+     </Attribute>  
+
+     <Attribute AttributeId="device_type" DataType="http://www.w3.org/2001/XMLSchema#string">  
+       <AttributeValue>desktop</AttributeValue>  
+     </Attribute>  
+
+     <Attribute AttributeId="ip_address" DataType="http://www.w3.org/2001/XMLSchema#string">  
+       <AttributeValue>local</AttributeValue>  
+     </Attribute>  
+
+     <Attribute AttributeId="time" DataType="http://www.w3.org/2001/XMLSchema#datetime">  
+       <AttributeValue>2021-11-01 15:00:00</AttributeValue>  
+     </Attribute>  
+  </Subject>  
+
+  <Resource>  
+     <Attribute AttributeId="resource" DataType="http://www.w3.org/2001/XMLSchema#string">  
+       <AttributeValue>notes</AttributeValue>  
+     </Attribute>  
+  </Resource>  
+
+  <Action>  
+     <Attribute AttributeId="action_type" DataType="http://www.w3.org/2001/XMLSchema#string">  
+     <AttributeValue>view</AttributeValue>  
+     </Attribute>  
+  </Action>  
+
+</Request> 
