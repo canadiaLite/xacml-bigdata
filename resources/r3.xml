@@ -1,7 +1,7 @@
 <Resource xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" id="3">
     <Attributes Category="urn:oasis:names:tc:xacml:1.0:subject-category:type">
         <Attribute AttributeId="urn:oasis:names:tc:xacml:1.0:subject:type-id">
-            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">personal_info</AttributeValue>
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">notes</AttributeValue>
         </Attribute>
     </Attributes>
     <Attributes Category="urn:oasis:names:tc:xacml:1.0:subject-category:status">

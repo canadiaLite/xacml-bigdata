@@ -11,7 +11,7 @@
      </Attribute>  
 
      <Attribute AttributeId="ip_address" DataType="http://www.w3.org/2001/XMLSchema#string">  
-       <AttributeValue>local</AttributeValue>  
+       <AttributeValue>192.168.22.3</AttributeValue>
      </Attribute>  
 
      <Attribute AttributeId="access_time" DataType="http://www.w3.org/2001/XMLSchema#datetime">
@@ -21,7 +21,7 @@
 
   <Resource>  
      <Attribute AttributeId="resource" DataType="http://www.w3.org/2001/XMLSchema#string">  
-       <AttributeValue>personal_info</AttributeValue>
+       <AttributeValue>2</AttributeValue>
      </Attribute>  
   </Resource>  
 

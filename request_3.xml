@@ -7,11 +7,11 @@
      </Attribute>
 
      <Attribute AttributeId="device_type" DataType="http://www.w3.org/2001/XMLSchema#string">  
-       <AttributeValue>phone</AttributeValue>  
+       <AttributeValue>mobile</AttributeValue>
      </Attribute>  
 
      <Attribute AttributeId="ip_address" DataType="http://www.w3.org/2001/XMLSchema#string">  
-       <AttributeValue>local</AttributeValue>  
+       <AttributeValue>192.168.22.4</AttributeValue>
      </Attribute>  
 
      <Attribute AttributeId="access_time" DataType="http://www.w3.org/2001/XMLSchema#datetime">
@@ -21,7 +21,7 @@
 
   <Resource>  
      <Attribute AttributeId="resource" DataType="http://www.w3.org/2001/XMLSchema#string">  
-       <AttributeValue>imaging</AttributeValue>  
+       <AttributeValue>1</AttributeValue>
      </Attribute>  
   </Resource>  
 
