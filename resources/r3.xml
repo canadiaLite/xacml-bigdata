@@ -1,12 +1,12 @@
 <Resource xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" id="3">
     <Attributes Category="urn:oasis:names:tc:xacml:1.0:subject-category:type">
         <Attribute AttributeId="urn:oasis:names:tc:xacml:1.0:subject:type-id">
-            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">PersonalInfo</AttributeValue>
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">personal_info</AttributeValue>
         </Attribute>
     </Attributes>
     <Attributes Category="urn:oasis:names:tc:xacml:1.0:subject-category:status">
         <Attribute AttributeId="urn:oasis:names:tc:xacml:1.0:action:status-id">
-            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Closed</AttributeValue>
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">closed</AttributeValue>
         </Attribute>
     </Attributes>
     <Attributes Category="urn:oasis:names:tc:xacml:1.0:subject-category:patientId">

@@ -1,14 +1,10 @@
 <!-- Tech tries to edit an Imaging resource from their phone -->
-<Request xmlns="urn:oasis:names:tc:xacml:2.0:context:schema:os" 
+<Request xmlns="xacmldemo:1.0:context:schema"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
   <Subject>  
-     <Attribute AttributeId="identity" DataType="http://www.w3.org/2001/XMLSchema#string">  
-       <AttributeValue>tech</AttributeValue>  
-     </Attribute>  
-
-     <Attribute AttributeId="role" DataType="http://www.w3.org/2001/XMLSchema#string">  
-       <AttributeValue>staff</AttributeValue>  
-     </Attribute>  
+     <Attribute AttributeId="user_id" DataType="http://www.w3.org/2001/XMLSchema#string">
+       <AttributeValue>2</AttributeValue>
+     </Attribute>
 
      <Attribute AttributeId="device_type" DataType="http://www.w3.org/2001/XMLSchema#string">  
        <AttributeValue>phone</AttributeValue>  
@@ -18,8 +14,8 @@
        <AttributeValue>local</AttributeValue>  
      </Attribute>  
 
-     <Attribute AttributeId="time" DataType="http://www.w3.org/2001/XMLSchema#datetime">  
-       <AttributeValue>2021-11-01 15:00:00</AttributeValue>  
+     <Attribute AttributeId="access_time" DataType="http://www.w3.org/2001/XMLSchema#datetime">
+       <AttributeValue>15:00:00</AttributeValue>
      </Attribute>  
   </Subject>  
 
